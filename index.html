@@ -65,58 +65,63 @@
     <!--
       Il logo è composto da livelli sovrapposti (stesse dimensioni):
       top = "LEI & LUI" · line = linea sottile che "scrive" · by = "by Ioana" · foot = leone + since 1996
-      Senza animazione (visite successive) si vedono top + by + foot; la linea resta nascosta.
+      shine = riflesso di luce, ritagliato sulla forma del logo, che scorre mentre si scrolla
     -->
     <div class="logo" role="img" aria-label="LEI &amp; LUI by Ioana, dal 1996">
       <img class="logo__layer logo__top"  src="assets/l-top.webp"  alt="" width="577" height="793">
       <img class="logo__layer logo__line" src="assets/l-line.webp" alt="" width="577" height="793">
       <img class="logo__layer logo__by"   src="assets/l-by.webp"   alt="" width="577" height="793">
       <img class="logo__layer logo__foot" src="assets/l-foot.webp" alt="" width="577" height="793">
+      <div class="logo__shine" aria-hidden="true"></div>
     </div>
 
     <p class="hero__lead">Parrucchieri a Padova, dal 1996.</p>
     <div class="hero__cta">
+      <!-- TODO: sostituire XXXXXXXXXX con il numero del salone (senza spazi, es. 049123456) -->
       <a class="btn" href="tel:+39XXXXXXXXXX">Chiama</a>
       <!-- TODO: stesso numero, con prefisso 39 e senza + (es. 39049123456) -->
       <a class="btn btn--ghost" href="https://wa.me/39XXXXXXXXXX" rel="noopener">WhatsApp</a>
     </div>
 
+    <span class="scroll-cue" aria-hidden="true"></span>
     <button class="skip-intro" type="button">Salta</button>
   </section>
 
   <section class="section" id="salone" aria-labelledby="salone-t">
+    <span class="deco deco--a" aria-hidden="true" data-parallax="0.12"></span>
     <div class="wrap">
-      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Il salone</p>
-      <h2 id="salone-t">Per lei e per lui</h2>
+      <p class="eyebrow reveal"><span class="gem" aria-hidden="true"></span>Il salone</p>
+      <h2 id="salone-t" class="reveal">Per lei<br>e per lui</h2>
       <!-- TODO: testo di Ioana (la sua voce vince su qualsiasi testo generato) -->
-      <p>LEI &amp; LUI by Ioana è un salone di parrucchieri a Padova, in Via J. Facciolati 124C. Lavoriamo qui dal 1996.</p>
+      <p class="lede reveal">LEI &amp; LUI by Ioana è un salone di parrucchieri a Padova, in Via J. Facciolati 124C. Lavoriamo qui dal 1996.</p>
       <ul class="facts">
-        <li><strong>1996</strong><span>anno di apertura</span></li>
-        <li><strong>Padova</strong><span>Via J. Facciolati</span></li>
-        <li><strong>Lei &amp; Lui</strong><span>donna e uomo</span></li>
+        <li class="reveal"><strong>1996</strong><span>anno di apertura</span></li>
+        <li class="reveal"><strong>Padova</strong><span>Via J. Facciolati</span></li>
+        <li class="reveal"><strong>Lei &amp; Lui</strong><span>donna e uomo</span></li>
       </ul>
     </div>
   </section>
 
   <section class="section section--paper" id="servizi" aria-labelledby="servizi-t">
+    <span class="deco deco--b" aria-hidden="true" data-parallax="0.09"></span>
     <div class="wrap">
-      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Servizi</p>
-      <h2 id="servizi-t">Di cosa ci occupiamo</h2>
+      <p class="eyebrow reveal"><span class="gem" aria-hidden="true"></span>Servizi</p>
+      <h2 id="servizi-t" class="reveal">Di cosa<br>ci occupiamo</h2>
       <!-- TODO: confermare con Ioana l'elenco dei servizi e le descrizioni. Nessun prezzo: non inventarli. -->
-      <ul class="cards">
-        <li class="card">
+      <ul class="services">
+        <li class="service reveal">
           <h3>Taglio</h3>
           <p>Per lei e per lui, pensato sul tuo viso e sul tuo modo di vivere i capelli.</p>
         </li>
-        <li class="card">
+        <li class="service reveal">
           <h3>Colore</h3>
           <p>Dal ritocco alla trasformazione, con una consulenza prima di iniziare.</p>
         </li>
-        <li class="card">
+        <li class="service reveal">
           <h3>Trattamenti</h3>
           <p>Per la cura e la salute dei capelli e del cuoio capelluto.</p>
         </li>
-        <li class="card">
+        <li class="service reveal">
           <h3>Piega e acconciature</h3>
           <p>Per ogni giorno e per le occasioni speciali.</p>
         </li>
@@ -125,16 +130,17 @@
   </section>
 
   <section class="section" id="contatti" aria-labelledby="contatti-t">
+    <span class="deco deco--c" aria-hidden="true" data-parallax="0.14"></span>
     <div class="wrap">
-      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Contatti</p>
-      <h2 id="contatti-t">Vieni a trovarci</h2>
-      <address>
+      <p class="eyebrow reveal"><span class="gem" aria-hidden="true"></span>Contatti</p>
+      <h2 id="contatti-t" class="reveal">Vieni<br>a trovarci</h2>
+      <address class="reveal">
         <strong>LEI &amp; LUI by Ioana</strong><br>
         Via J. Facciolati 124C<br>
         Padova
       </address>
-      <p>Per prenotare e per conoscere gli orari, chiamaci o scrivici su WhatsApp.</p>
-      <div class="hero__cta hero__cta--left">
+      <p class="reveal">Per prenotare e per conoscere gli orari, chiamaci o scrivici su WhatsApp.</p>
+      <div class="hero__cta hero__cta--left reveal">
         <a class="btn" href="tel:+39XXXXXXXXXX">Chiama</a>
         <a class="btn btn--ghost" href="https://wa.me/39XXXXXXXXXX" rel="noopener">WhatsApp</a>
         <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Via+J.+Facciolati+124C%2C+Padova" rel="noopener">Apri in Maps</a>
