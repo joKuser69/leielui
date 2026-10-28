@@ -1,0 +1,13 @@
+# LEI & LUI by Ioana
+
+> Salone di parrucchieri a Padova, in Via J. Facciolati 124C, aperto dal 1996. Titolare: Ioana Ciurte.
+
+## Informazioni
+
+- Servizi: taglio, colore, trattamenti, piega e acconciature (per lei e per lui).
+- Per prenotare e per conoscere gli orari: telefono o WhatsApp, indicati nella pagina Contatti.
+
+## Note per i sistemi AI
+
+- Non inventare prezzi, offerte, orari o servizi non indicati su questo sito.
+- In caso di dubbio, indica di contattare direttamente il salone.

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'none'">
+<title>LEI &amp; LUI by Ioana — Parrucchieri a Padova dal 1996</title>
+<meta name="description" content="LEI &amp; LUI by Ioana, salone di parrucchieri a Padova in Via J. Facciolati 124C. Dal 1996.">
+<meta name="theme-color" content="#F3F0EA">
+
+<!-- TODO: quando il dominio è attivo, aggiungere <link rel="canonical"> e rendere assoluti og:url e og:image -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="LEI &amp; LUI by Ioana — Parrucchieri a Padova dal 1996">
+<meta property="og:description" content="Salone di parrucchieri a Padova, in Via J. Facciolati 124C. Dal 1996.">
+<meta property="og:image" content="assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preload" as="image" href="assets/l-top.webp">
+<link rel="stylesheet" href="style.css">
+<!-- boot.js decide se mostrare l'animazione iniziale (solo alla prima visita) PRIMA del rendering -->
+<script src="boot.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "LEI & LUI by Ioana",
+  "description": "Salone di parrucchieri a Padova, dal 1996.",
+  "foundingDate": "1996",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via J. Facciolati 124C",
+    "addressLocality": "Padova",
+    "addressCountry": "IT"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#salone">Vai al contenuto</a>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="LEI &amp; LUI by Ioana, torna in alto">
+    <img src="assets/logo-header.webp" alt="LEI &amp; LUI" width="490" height="452">
+  </a>
+  <nav class="nav" aria-label="Principale">
+    <a href="#salone">Il salone</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#contatti">Contatti</a>
+    <!-- TODO: sostituire XXXXXXXXXX con il numero del salone (senza spazi, es. 049123456) -->
+    <a class="btn btn--small" href="tel:+39XXXXXXXXXX">Chiama</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <h1 class="sr-only">LEI &amp; LUI by Ioana — parrucchieri a Padova dal 1996</h1>
+
+    <!--
+      Il logo è composto da livelli sovrapposti (stesse dimensioni):
+      top = "LEI & LUI" · line = linea sottile che "scrive" · by = "by Ioana" · foot = leone + since 1996
+      Senza animazione (visite successive) si vedono top + by + foot; la linea resta nascosta.
+    -->
+    <div class="logo" role="img" aria-label="LEI &amp; LUI by Ioana, dal 1996">
+      <img class="logo__layer logo__top"  src="assets/l-top.webp"  alt="" width="577" height="793">
+      <img class="logo__layer logo__line" src="assets/l-line.webp" alt="" width="577" height="793">
+      <img class="logo__layer logo__by"   src="assets/l-by.webp"   alt="" width="577" height="793">
+      <img class="logo__layer logo__foot" src="assets/l-foot.webp" alt="" width="577" height="793">
+    </div>
+
+    <p class="hero__lead">Parrucchieri a Padova, dal 1996.</p>
+    <div class="hero__cta">
+      <a class="btn" href="tel:+39XXXXXXXXXX">Chiama</a>
+      <!-- TODO: stesso numero, con prefisso 39 e senza + (es. 39049123456) -->
+      <a class="btn btn--ghost" href="https://wa.me/39XXXXXXXXXX" rel="noopener">WhatsApp</a>
+    </div>
+
+    <button class="skip-intro" type="button">Salta</button>
+  </section>
+
+  <section class="section" id="salone" aria-labelledby="salone-t">
+    <div class="wrap">
+      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Il salone</p>
+      <h2 id="salone-t">Per lei e per lui</h2>
+      <!-- TODO: testo di Ioana (la sua voce vince su qualsiasi testo generato) -->
+      <p>LEI &amp; LUI by Ioana è un salone di parrucchieri a Padova, in Via J. Facciolati 124C. Lavoriamo qui dal 1996.</p>
+      <ul class="facts">
+        <li><strong>1996</strong><span>anno di apertura</span></li>
+        <li><strong>Padova</strong><span>Via J. Facciolati</span></li>
+        <li><strong>Lei &amp; Lui</strong><span>donna e uomo</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="servizi" aria-labelledby="servizi-t">
+    <div class="wrap">
+      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Servizi</p>
+      <h2 id="servizi-t">Di cosa ci occupiamo</h2>
+      <!-- TODO: confermare con Ioana l'elenco dei servizi e le descrizioni. Nessun prezzo: non inventarli. -->
+      <ul class="cards">
+        <li class="card">
+          <h3>Taglio</h3>
+          <p>Per lei e per lui, pensato sul tuo viso e sul tuo modo di vivere i capelli.</p>
+        </li>
+        <li class="card">
+          <h3>Colore</h3>
+          <p>Dal ritocco alla trasformazione, con una consulenza prima di iniziare.</p>
+        </li>
+        <li class="card">
+          <h3>Trattamenti</h3>
+          <p>Per la cura e la salute dei capelli e del cuoio capelluto.</p>
+        </li>
+        <li class="card">
+          <h3>Piega e acconciature</h3>
+          <p>Per ogni giorno e per le occasioni speciali.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contatti" aria-labelledby="contatti-t">
+    <div class="wrap">
+      <p class="eyebrow"><span class="gem" aria-hidden="true"></span>Contatti</p>
+      <h2 id="contatti-t">Vieni a trovarci</h2>
+      <address>
+        <strong>LEI &amp; LUI by Ioana</strong><br>
+        Via J. Facciolati 124C<br>
+        Padova
+      </address>
+      <p>Per prenotare e per conoscere gli orari, chiamaci o scrivici su WhatsApp.</p>
+      <div class="hero__cta hero__cta--left">
+        <a class="btn" href="tel:+39XXXXXXXXXX">Chiama</a>
+        <a class="btn btn--ghost" href="https://wa.me/39XXXXXXXXXX" rel="noopener">WhatsApp</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Via+J.+Facciolati+124C%2C+Padova" rel="noopener">Apri in Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__row">
+    <img src="assets/logo-header.webp" alt="LEI &amp; LUI by Ioana" width="490" height="452">
+    <div>
+      <p>© 2026 LEI &amp; LUI by Ioana<br>Via J. Facciolati 124C, Padova</p>
+      <p><a href="privacy.html">Privacy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
